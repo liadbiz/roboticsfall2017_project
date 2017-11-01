@@ -1,0 +1,11 @@
+Team member info:
+
+zhuhh2@shanghaitech.edu.cn Zhu Haihao
+yangyi1@shanghaitech.edu.cn Yang Yi
+guhd@shanghaitech.edu.cn Gu Hudie
+
+Project title:
+
+Identify Obstacles And Grab Items By Robot Arms
+
+
