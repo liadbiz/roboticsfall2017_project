@@ -1,0 +1,32 @@
+如何使用ROS 控制桌面机械手Dobot魔术师?
+https://cn.dobot.cc/tutorial/ros-demo-control-dobot-magician.html
+
+cd dobot_ws
+catkin_make
+source ./devel/setup.bash
+roscore
+rosrun dobot DobotServer ttyUSB0
+
+rosrun dobot DobotClient_JOG
+rosrun dobot DobotClient_PTP
+
+下载中心downloadcenter
+https://cn.dobot.cc/downloadcenter/dobot-magician.html?sub_cat=72#sub-download
+download Dobot Demo/DobotDemo For Magician说明文件  here
+
+
+[提示Dobot未找到或被占用] 试试看：sudo chmod 666 /dev/ttyUSB0
+ttyUSB0还是ttyUSB1看这个：
+Ubuntu下获取/dev/ttyUSBn索引号与实际设备的对应关系
+http://www.mikewootc.com/wiki/linux/usage/ubuntu_ttyusb_number_vs_device.html
+
+linux下非root用户获得/dev/ttyUSB0的读写权限
+http://blog.csdn.net/maoyongfan3/article/details/44623909
+Ubuntu linux中怎么查看自己的串口连接情况
+http://blog.csdn.net/mybelief321/article/details/8987658
+linux下串口的安装和使用（ubuntu+usb转串口）
+http://blog.csdn.net/u014416516/article/details/39482183
+Ubuntu中的minicom的安装过程
+http://blog.csdn.net/mybelief321/article/details/8987502
+[连接的 USB 端口不对]
+
