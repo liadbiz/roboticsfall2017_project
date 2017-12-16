@@ -1,0 +1,86 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{7151321}
+M.~M. Ali, H.~Liu, R.~Stoll, and K.~Thurow.
+\newblock Arm grasping for mobile robot transportation using kinect sensor and
+  kinematic analysis.
+\newblock In {\em 2015 IEEE International Instrumentation and Measurement
+  Technology Conference (I2MTC) Proceedings}, pages 516--521, May 2015.
+
+\bibitem{844872}
+Y.~Fu, R.~Sharma, and M.~Zeller.
+\newblock Vision-based motion planning for a robot arm using topology
+  representing networks.
+\newblock In {\em Proceedings 2000 ICRA. Millennium Conference. IEEE
+  International Conference on Robotics and Automation. Symposia Proceedings
+  (Cat. No.00CH37065)}, volume~2, pages 1900--1905 vol.2, 2000.
+
+\bibitem{6896430}
+Z.~Ju, C.~Yang, and H.~Ma.
+\newblock Kinematics modeling and experimental verification of baxter robot.
+\newblock In {\em Proceedings of the 33rd Chinese Control Conference}, pages
+  8518--8523, July 2014.
+
+\bibitem{6739654}
+H.~Liu, N.~Stoll, S.~Junginger, and K.~Thurow.
+\newblock A new method for mobile robot arm blind grasping using ultrasonic
+  sensors and artificial neural networks.
+\newblock In {\em 2013 IEEE International Conference on Robotics and
+  Biomimetics (ROBIO)}, pages 1360--1364, Dec 2013.
+
+\bibitem{7367810}
+M.~Mahdavian, M.~Shariat-Panahi, A.~Yousefi-Koma, and A.~Ghasemi-Toudeshki.
+\newblock Optimal trajectory generation for energy consumption minimization and
+  moving obstacle avoidance of a 4dof robot arm.
+\newblock In {\em 2015 3rd RSI International Conference on Robotics and
+  Mechatronics (ICROM)}, pages 353--358, Oct 2015.
+
+\bibitem{7451596}
+Z.~Mohamed and G.~Capi.
+\newblock Multi objective optimization of humanoid robot arm motion for
+  obstacle avoidance.
+\newblock In {\em 2015 IEEE International Symposium on Robotics and Intelligent
+  Sensors (IRIS)}, pages 111--114, Oct 2015.
+
+\bibitem{4516345}
+A.~H. Rajpar, M.~U. Keerio, and A.~Kawaja.
+\newblock Motion planning of humanoid robot arm for grasping task.
+\newblock In {\em 2007 International Conference on Emerging Technologies},
+  pages 212--217, Nov 2007.
+
+\bibitem{8025192}
+A.~Rastegarpanah, N.~Marturi, and R.~Stolkin.
+\newblock Autonomous vision-guided bi-manual grasping and manipulation.
+\newblock In {\em 2017 IEEE Workshop on Advanced Robotics and its Social
+  Impacts (ARSO)}, pages 1--7, March 2017.
+
+\bibitem{554347}
+R.~Sharma and H.~Sutanto.
+\newblock A framework for robot motion planning with sensor constraints.
+\newblock {\em IEEE Transactions on Robotics and Automation}, 13(1):61--73, Feb
+  1997.
+
+\bibitem{6308189}
+K.~T. Song and S.~C. Tsai.
+\newblock Vision-based adaptive grasping of a humanoid robot arm.
+\newblock In {\em 2012 IEEE International Conference on Automation and
+  Logistics}, pages 155--160, Aug 2012.
+
+\bibitem{1087115}
+L.~Weiss, A.~Sanderson, and C.~Neuman.
+\newblock Dynamic sensor-based control of robots with visual feedback.
+\newblock {\em IEEE Journal on Robotics and Automation}, 3(5):404--417, October
+  1987.
+
+\bibitem{7578727}
+Z.~Wu, L.~Liu, Y.~An, J.~Wu, and H.~Shao.
+\newblock The intelligent robot arm based on sense of sight.
+\newblock In {\em 2016 12th World Congress on Intelligent Control and
+  Automation (WCICA)}, pages 1229--1233, June 2016.
+
+\bibitem{588194}
+M.~Zeller, R.~Sharma, and K.~Schulten.
+\newblock Motion planning of a pneumatic robot using a neural network.
+\newblock {\em IEEE Control Systems}, 17(3):89--98, June 1997.
+
+\end{thebibliography}
