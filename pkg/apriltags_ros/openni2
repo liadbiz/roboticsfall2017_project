@@ -1,7 +1,0 @@
-roscore
-roslaunch openni2_launch openni2.launch
-rqt
-rosrun image_view image_view image:=/camera/rgb/image_color
-
-cd apriltags_ros
-source environment.sh

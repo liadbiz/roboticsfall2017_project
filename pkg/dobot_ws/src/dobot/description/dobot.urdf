@@ -17,7 +17,7 @@
   <link name="base_link" >
     <visual>
        <geometry>
-	  <cylinder length="0.12" radius="0.079"/>
+	  <box size="0.16 0.16 0.056"/> //base is 0.16*0.16*0.056
        </geometry>
        <material name="blue"/>
     </visual>
@@ -26,50 +26,49 @@
   <link name="link2" >
     <visual>
        <geometry>
-	  <box size="0.147 0.05 0.05"/>
+	  <cylinder radius="0.07" length="0.08"/> //link2 is radius 0.07 and height 0.08
        </geometry>
-       <origin rpy="0 0.05 0" xyz="0 0 0"/>
-       <material name="red"/>
+       <origin xyz="0 0 0.04" rpy="0 0 0"/> //link2 z + 1/2 h_itself
+       <material name="green"/>
     </visual>
   </link>
 
   <link name="link3" >
     <visual>
        <geometry>
-	<box size="0.135 0.05 0.05"/>
+	  <box size="0.07 0.04 0.14"/> //link3 is 0.07*0.04*0.14
        </geometry>
-       <origin rpy="0 1.57075 0" xyz="0 0 0.247 "/>
-       <material name="green"/>
-   </visual>
+       <origin xyz="-0.035 0 0.07" rpy="0 0 0"/> //link3 z + 1/2 h_itself, x - 1/2 l_itself
+       <material name="red"/>
+    </visual>
   </link>
 
- <link name="link4" >
+  <link name="link4" >
     <visual>
        <geometry>
-	 <cylinder length="0.1" radius="0"/>
+	  <box size="0.07 0.04 0.14"/> //link4 is 0.07*0.04*0.14
        </geometry>
-       <origin rpy="0 1.57075 0" xyz="0 0.147 0"/>
+       <origin xyz="-0.035 0 0.07" rpy="0 0 0"/> //link3 z + 1/2 h_itself, x - 1/2 l_itself
        <material name="white"/>
-   </visual>
+    </visual>
   </link>
 
   <joint name="joint12" type="continuous">
     <parent link="base_link"/>
     <child link="link2"/>
-    <origin xyz="0 0 0.06" />
+    <origin xyz="0 0 0.028" rpy="0 0 0" /> //joint12 z + 1/2 h_parent; rpy z is the rotate angle
   </joint>
 
   <joint name="joint23" type="continuous">
     <parent link="link2"/>
     <child link="link3"/>
-    <origin xyz="0 0 0"/>
+    <origin xyz="0 0 0.08" rpy="0 0 0" /> //joint23 z + h_parent;  rpy y is the rotate angle
   </joint>
 
   <joint name="joint34" type="continuous">
     <parent link="link3"/>
     <child link="link4"/>
-    <origin xyz="0 0.22 0.25"/>
+    <origin xyz="0 0 0.14" rpy="0 0 0" /> //joint34 z + h_parent; rpy y is the rotate angle
   </joint>
-
  
 </robot>
