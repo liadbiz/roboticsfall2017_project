@@ -2,6 +2,8 @@
 #include "std_msgs/String.h"
 #include "std_msgs/Float32MultiArray.h"
 #include "DobotDll.h"
+#include "dobot/GetPose.h"
+#include <sensor_msgs/JointState.h>
 
 /*
  * Cmd timeout
@@ -1145,7 +1147,29 @@ int main(int argc, char **argv)
     InitQueuedCmdServices(n, serverVec);
 
     ROS_INFO("Dobot service running...");
-    ros::spin();
+    Pose pose;
+    int getPoseResult;
+    sensor_msgs::JointState joint_state;
+    ros::Publisher joint_pub = n.advertise<sensor_msgs::JointState>("joint_states", 1);
+    // publish joint state of robot to /joint_state
+    while(ros::ok()) {
+        getPoseResult = GetPose(&pose);
+        joint_state.position.resize(4);
+        joint_state.name[0] ="joint12";        
+        if (getPoseResult == DobotCommunicate_NoError) {
+            joint_state.position[0] = pose.jointAngle[0];
+            joint_state.name[1] ="joint23";
+            joint_state.position[1] = pose.jointAngle[1];
+            joint_state.name[2] ="joint34";
+            joint_state.position[2] = pose.jointAngle[2];   
+            joint_state.name[3] ="joint45";
+            joint_state.position[3] = pose.jointAngle[3];             
+        }
+        joint_state.header.stamp = ros::Time::now();
+        joint_state.name.resize(4);
+        joint_pub.publish(joint_state);
+        ros::spin();        
+    }
     ROS_INFO("Dobot service exiting...");
 
     // Disconnect Dobot
