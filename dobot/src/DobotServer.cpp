@@ -1147,16 +1147,20 @@ int main(int argc, char **argv)
     InitQueuedCmdServices(n, serverVec);
 
     ROS_INFO("Dobot service running...");
-    Pose pose;
     int getPoseResult;
+    Pose pose;
     sensor_msgs::JointState joint_state;
+  
     ros::Publisher joint_pub = n.advertise<sensor_msgs::JointState>("joint_states", 1);
+    ros::Rate loop_rate(10);
     // publish joint state of robot to /joint_state
     while(ros::ok()) {
-        getPoseResult = GetPose(&pose);
+      getPoseResult = GetPose(&pose);
         joint_state.position.resize(4);
-        joint_state.name[0] ="joint12";        
+        joint_state.name.resize(4);
         if (getPoseResult == DobotCommunicate_NoError) {
+            ROS_INFO("here");
+            joint_state.name[0] ="joint12";        
             joint_state.position[0] = pose.jointAngle[0];
             joint_state.name[1] ="joint23";
             joint_state.position[1] = pose.jointAngle[1];
@@ -1166,10 +1170,11 @@ int main(int argc, char **argv)
             joint_state.position[3] = pose.jointAngle[3];             
         }
         joint_state.header.stamp = ros::Time::now();
-        joint_state.name.resize(4);
         joint_pub.publish(joint_state);
-        ros::spin();        
+        ros::spinOnce();
+        loop_rate.sleep();    
     }
+    // ros::spin();
     ROS_INFO("Dobot service exiting...");
 
     // Disconnect Dobot
