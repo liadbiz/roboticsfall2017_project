@@ -1153,10 +1153,25 @@ int main(int argc, char **argv)
     sensor_msgs::JointState joint_state;
      
     ros::Publisher joint_pub = n.advertise<sensor_msgs::JointState>("joint_states", 1);
-    ros::Rate loop_rate(10);
+    ros::Rate loop_rate(30);
+
+    // joint_state.position.resize(4);
+    // joint_state.name.resize(4);
+
+    // joint_state.name[0] ="joint12";        
+    // joint_state.position[0] = 0.0;
+    // joint_state.name[1] ="joint23";
+    // joint_state.position[1] = 0;
+    // joint_state.name[2] ="joint34";
+    // joint_state.position[2] = M_PI / 2;   
+    // joint_state.name[3] ="joint45";
+    // joint_state.position[3] = 0;             
+
+    // joint_state.header.stamp = ros::Time::now();
+    // joint_pub.publish(joint_state);
     // publish joint state of robot to /joint_state
     while(ros::ok()) {
-      getPoseResult = GetPose(&pose);
+        getPoseResult = GetPose(&pose);
         joint_state.position.resize(4);
         joint_state.name.resize(4);
         if (getPoseResult == DobotCommunicate_NoError) {
@@ -1166,7 +1181,7 @@ int main(int argc, char **argv)
             joint_state.name[1] ="joint23";
             joint_state.position[1] = pose.jointAngle[1] * M_PI /180;
             joint_state.name[2] ="joint34";
-            joint_state.position[2] = pose.jointAngle[2] * M_PI /180;   
+            joint_state.position[2] = (pose.jointAngle[2] - pose.jointAngle[1])* M_PI /180;   
             joint_state.name[3] ="joint45";
             joint_state.position[3] = pose.jointAngle[3] * M_PI /180;             
         }
