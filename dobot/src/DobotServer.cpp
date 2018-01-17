@@ -1183,7 +1183,7 @@ int main(int argc, char **argv)
             joint_state.name[2] ="joint34";
             joint_state.position[2] = (pose.jointAngle[2] - pose.jointAngle[1])* M_PI /180;   
             joint_state.name[3] ="joint45";
-            joint_state.position[3] = pose.jointAngle[3] * M_PI /180;             
+            joint_state.position[3] = -pose.jointAngle[2] * M_PI /180;             
         }
         joint_state.header.stamp = ros::Time::now();
         joint_pub.publish(joint_state);
