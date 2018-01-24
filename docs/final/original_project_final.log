@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.9.23)  19 DEC 2017 20:01
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.9.23)  24 JAN 2018 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -389,25 +389,16 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 53.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
 
-
-LaTeX Warning: Citation `4516345' on page 1 undefined on input line 71.
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 71--72
+Underfull \hbox (badness 1122) in paragraph at lines 80--81
 []\OT1/ptm/b/n/10 Motion Plan-ning of Hu-manoid Robot Arm for
  []
-
-
-LaTeX Warning: Citation `8025192' on page 1 undefined on input line 75.
-
-
-LaTeX Warning: Citation `7151321' on page 1 undefined on input line 79.
-
-
-LaTeX Warning: Citation `6739654' on page 1 undefined on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
@@ -417,17 +408,17 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 
 ]
-Underfull \hbox (badness 1789) in paragraph at lines 114--115
+Underfull \hbox (badness 1789) in paragraph at lines 123--124
 \OT1/ptm/m/n/10 BRIEF, Dense, FAST, Good-Fea-turesTo-Track,
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 118--119
+Underfull \hbox (badness 1558) in paragraph at lines 127--128
 \OT1/ptm/m/n/10 de-scrip-tors: see my project RTAB-Map (an
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 118--119
+Underfull \hbox (badness 6032) in paragraph at lines 127--128
 \OT1/ptm/m/n/10 appearance-based loop clo-sure de-tec-tor for
  []
 
@@ -490,89 +481,89 @@ Missing character: There is no ” in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 
-Underfull \hbox (badness 1189) in paragraph at lines 144--145
+Underfull \hbox (badness 1189) in paragraph at lines 153--154
 \OT1/ptm/m/n/10 cam-era cap-ture the real en-vi-ron-ment and use the
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 144--145
+Underfull \hbox (badness 2970) in paragraph at lines 153--154
 \OT1/ptm/m/n/10 data trans-mit-ted by the cam-era to form a pic-
  []
 
 
-Underfull \hbox (badness 4886) in paragraph at lines 144--145
+Underfull \hbox (badness 4886) in paragraph at lines 153--154
 \OT1/ptm/m/n/10 ture. It will cre-ate a usb$[]$cam$[]$node. The
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 144--145
+Underfull \hbox (badness 3547) in paragraph at lines 153--154
 \OT1/ptm/m/n/10 eras us-ing libusb$[]$cam and pub-lishes im-ages as
  []
 
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 152.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 161.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 152.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 161.
 
-Overfull \hbox (44.86635pt too wide) in paragraph at lines 153--154
+Overfull \hbox (44.86635pt too wide) in paragraph at lines 162--163
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (92.86684pt too wide) in paragraph at lines 154--155
+Overfull \hbox (92.86684pt too wide) in paragraph at lines 163--164
 [][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (146.86739pt too wide) in paragraph at lines 155--156
+Overfull \hbox (146.86739pt too wide) in paragraph at lines 164--165
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (92.86684pt too wide) in paragraph at lines 156--157
+Overfull \hbox (92.86684pt too wide) in paragraph at lines 165--166
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (98.8669pt too wide) in paragraph at lines 157--158
+Overfull \hbox (98.8669pt too wide) in paragraph at lines 166--167
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (110.86702pt too wide) in paragraph at lines 158--159
+Overfull \hbox (110.86702pt too wide) in paragraph at lines 167--168
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (140.86732pt too wide) in paragraph at lines 159--160
+Overfull \hbox (140.86732pt too wide) in paragraph at lines 168--169
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (80.86671pt too wide) in paragraph at lines 160--161
+Overfull \hbox (80.86671pt too wide) in paragraph at lines 169--170
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (188.86781pt too wide) in paragraph at lines 162--163
+Overfull \hbox (188.86781pt too wide) in paragraph at lines 171--172
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (62.86653pt too wide) in paragraph at lines 163--164
+Overfull \hbox (62.86653pt too wide) in paragraph at lines 172--173
 [][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (122.86714pt too wide) in paragraph at lines 164--165
+Overfull \hbox (122.86714pt too wide) in paragraph at lines 173--174
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (80.86671pt too wide) in paragraph at lines 165--166
+Overfull \hbox (80.86671pt too wide) in paragraph at lines 174--175
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -580,27 +571,26 @@ Missing character: There is no “ in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 [3]
 Missing character: There is no ’ in font ptmr7t!
+File: urdf_model.png Graphic file (type QTm)
+ <use  "urdf_model.png" > [4] (./original_project_final.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
+ [5
 
-No file original_project_final.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 240.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
- (./original_project_final.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 240.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 240.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 240.
+(./original_project_final.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 260.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 260.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 10863 strings out of 495189
- 149731 string characters out of 6178934
- 234350 words of memory out of 5000000
- 14067 multiletter control sequences out of 15000+600000
- 16614 words of font info for 54 fonts, out of 8000000 for 9000
+ 10874 strings out of 495189
+ 149872 string characters out of 6178934
+ 234582 words of memory out of 5000000
+ 14073 multiletter control sequences out of 15000+600000
+ 17121 words of font info for 55 fonts, out of 8000000 for 9000
  286 hyphenation exceptions out of 8191
  37i,9n,39p,2826b,1205s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on original_project_final.pdf (4 pages).
+Output written on original_project_final.pdf (5 pages).

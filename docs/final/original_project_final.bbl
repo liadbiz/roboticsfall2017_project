@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{7151321}
+M.~M. Ali, H.~Liu, R.~Stoll, and K.~Thurow.
+\newblock Arm grasping for mobile robot transportation using kinect sensor and
+  kinematic analysis.
+\newblock In {\em 2015 IEEE International Instrumentation and Measurement
+  Technology Conference (I2MTC) Proceedings}, pages 516--521, May 2015.
+
+\bibitem{6739654}
+H.~Liu, N.~Stoll, S.~Junginger, and K.~Thurow.
+\newblock A new method for mobile robot arm blind grasping using ultrasonic
+  sensors and artificial neural networks.
+\newblock In {\em 2013 IEEE International Conference on Robotics and
+  Biomimetics (ROBIO)}, pages 1360--1364, Dec 2013.
+
+\bibitem{4516345}
+A.~H. Rajpar, M.~U. Keerio, and A.~Kawaja.
+\newblock Motion planning of humanoid robot arm for grasping task.
+\newblock In {\em 2007 International Conference on Emerging Technologies},
+  pages 212--217, Nov 2007.
+
+\bibitem{8025192}
+A.~Rastegarpanah, N.~Marturi, and R.~Stolkin.
+\newblock Autonomous vision-guided bi-manual grasping and manipulation.
+\newblock In {\em 2017 IEEE Workshop on Advanced Robotics and its Social
+  Impacts (ARSO)}, pages 1--7, March 2017.
+
+\end{thebibliography}

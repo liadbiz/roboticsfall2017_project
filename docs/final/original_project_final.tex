@@ -53,17 +53,26 @@ Yi Yang\\
 
 %%%%%%%%% ABSTRACT
 \begin{abstract}
-   This project will focus on grading items, identifying obstacles and placing them across the obstacles in the specified position by ROS and some relevant packages.
+   This project is based on Dobot Magician Robot Arm and Ros, we plan to create a model by usig URDF file in Ros invironment, and make the model move along the real robot.
+   
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
 \section{Introduction}
 
-When robot arms grab items, there may be obstacles like isolation board or just big things between the starting point and specified position which may hinder the grab behavior. So this project will using robot arm to seek and fetch the items, identify obstacle and step over them, put items in the specified position.
+\subsection{Dobot}
+The Dobot Magician Robot Arm is multi-task robot arm that has black and white body with consistent qualityat fingertipsUnibody design, unbox and enjoy right away Designed for desktop, safe and easily lifted. It contains a Vacuum pump Kit , Gripper, Wirting and Drawing Kit, 3D Printing Kit, and other accessories.
 
-This project can be use in many tasks. for example, in life science, an robot arm can used to grab a special type of tube from one place to other place, this kind of task can be very boring and time-consuming if given to human. Since many procedures in a experiment is stable, we can use robot arm to replace human. So this project is interesting and also practical to do.
+It has many features like writing, drawing, 3D printing and even playing chessing with human.  
+
+
+\subsection{URDF}
+
+URDF means Unified Robot Description Format, it is Kinematic and basic physics description of a robot in XML file format. It mainly consists of tags like links , joint and material.  Many of the coolest and most useful capabilities of ROS and its community involve things like collision checking and dynamic path planning. It’s frequently useful to have a code-independent, human-readable way to describe the geometry of robots and their cells. Think of it like a textual CAD description: “part-one is 1 meter left of part-two and has the following triangle-mesh for display purposes.” The Unified Robot Description Format (URDF) is the most popular of these formats today. This module will walk you through creating a simple robot cell that we’ll expand upon and use for practical purposes later.
 
 \section{State of the art}
+
+Since the initial goal of this project is trying to identify obstacles and grasp items by robot arms, but situation changes when the initial robot arm is broken. Then we changed our goal to model the new Dobot robot arm and make it move along the real Maigician Dobot Arm, which has no State-Of-The-Art part, so we list the content in the intermidiate report.
 
 \subsection{Haihao Zhu}
 
@@ -220,21 +229,32 @@ For computer vision task,  we will use apriltags to find where the tube are rela
 
 \section{System	Evaluation}
 
-We can design some experiments to test if we have achieved our goal.
+\subsection{URDF model}
 
-\begin{enumerate}
-\item use keyboard to guide robot arm grasping an object placed on a plane.
-\item let robot arm automatically find obejct on a plane, plan path by itself and grasp object. Put the object in different place to ensure our algorithm can work with any curcumstances.
-\item let robot grasp a robot and put it in another place away from it's original place. Put obstacles between those two point to test if the robot arm can detect obstacles correctly.
-\end{enumerate}
+We have built a URDF model by creating URDF file with real size, To simplify, we use cylinder and box to represent links of the arm. It looks like below:
 
+\begin{figure}[t]
+\begin{center}
+	\includegraphics[width=0.8\linewidth]{urdf_model.png}
+\end{center}
+   \caption{URDF model of the Dobot Magician Arm}
+\label{fig:long}
+\label{fig:onecol}
+\end{figure}
+
+We can see from the figure 1, dobot magician robot arm has a fice links including base link and 4 joint between each of them. To achieve our goal, we need to get the joint message of each joint of the real robot and set it into the joint of URDF model by using $ joint_state_publisher $ package in URDF file.
+
+\subsection{Dobot API}
+
+The main point is how to get joint message of the real robot. We can get it by Dobot API. Since it is ugly to put the code here, I have put the code we write in my git repository \cite{}.
 
 \section{Conclusion}
 
-During the passed 3 weeks, we have finished the computer vision part, but we can not do something more to the robot arm because it was broken in the first week.  We used a ros package and a camera to detect the position of real tags on the desk, the position is relevant to the camera fixed on the robot.
+Finaly, we have achieved our goal that the mode move along the real robot when we press keyboard to control the real robot. The demo can be found in our webpage of this project \cite{}
 
 
+{
 \bibliographystyle{ieee}
-\bibliography{intermediate}
-
+\bibliography{final}
+}
 \end{document}
