@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robotics 2017: Identify Obstacles And Grab Items By Robot Arms | ShanghaiTech Automation and Robotics lab - STARLab</title>
+</head>
+<body>
+<div class="container">
+    <h2 class="main-title">
+        Robotics 2017: Identify Obstacles And Grab Items By Robot Arms
+    </h2>
+    <p class="subtitle">
+        A project of the <a href="https://robotics.shanghaitech.edu.cn/teaching/robotics2017"> Robotics 2017 </a> class of the School of <a href="http://sist.shanghaitech.edu.cn/"> Information Science and Technology </a> (SIST) of <a href="http://www.shanghaitech.edu.cn/eng/"> ShanghaiTech University </a>. Course Instructor: Prof. <a href="https://robotics.shanghaitech.edu.cn/people/soeren">Sören Schwertfeger</a>
+    </p>
+    <p class="authors">
+        Haihao Zhu, Hudie Gu, Yi Yang
+    </p>
+    <h2>Introduction</h2>
+    <p>This project is based on Dobot Magician Robot Arm and Ros, we plan to create a model by usig URDF file in Ros invironment, and make the model move along the real robot.</p>
+    <h3>Dobot Magician Arm</h3>
+    <p>The Dobot Magician Robot Arm is multi-task robot arm that has black and white body with consistent qualityat fingertipsUnibody design, unbox and enjoy right away Designed for desktop, safe and easily lifted. It contains a Vacuum pump Kit , Gripper, Wirting and Drawing Kit, 3D Printing Kit, and other accessories.It has many features like writing, drawing, 3D printing and even playing chessing with human.
+    </p>
+    <p>Dobot Magician is an All-in-One Robot arm for Education. It can be controlled by PC, phone, gesture or voice since it can communicate by USB, Wifi and Bluetooch.Dobot Magician has 4 axes while its maximum reach is 320mm and its position repeatability(control) is 0.2mm. Dobot magician has 13 extension ports, 1 programmable key and 2MB offline command storage. One of dobot’s main characters is its various endeffectors, such as 3D Printer Kit, pen holder, vacuum suction cap, gripper and laser. The softwares for dobot magician are DobotStudio(for Windows XP, win7 SPI, win8/win10, mac osx 10.10 and mac osx 10.11, mac osx 10.12), Repetier Host, GrblController3.6, DobotBlockly (Visual Programing editor) while the software develop kit is Communication Protocol, Dobot Program Library. In ROS, dobot doesn’t have much function except controlling the arm by keyboard using package.
+    </p>
+    <p>Dobot magician has 13 extension ports, 1 programmable key and 2MB offline command storage. One of dobot’s main characters is its various endeffectors, such as 3D Printer Kit, pen holder, vacuum suction cap, gripper and laser.The softwares for dobot magician are DobotStudio(for Windows XP, win7 SPI, win8/win10, mac osx 10.10 and mac osx 10.11, mac osx 10.12), Repetier Host, GrblController3.6, DobotBlockly (Visual Programing editor) while the software develop kit is Communication Protocol, Dobot Program Library. In ROS, dobot doesn’t have much function except controlling the arm by keyboard using package.
+    </p>
+    <p>The figure below is what the Dobot arm looks like.</p>
+    <img src="https://robotics.shanghaitech.edu.cn/sites/default/files//upload/images/dobot1.jpg">
+    <img src="https://robotics.shanghaitech.edu.cn/sites/default/files//upload/images/dobot2.jpg">
+    <img src="https://robotics.shanghaitech.edu.cn/sites/default/files//upload/images/dobot3.jpg">
+    <h3>URDF</h3>
+    <p>URDF means Unified Robot Description Format, it is Kinematic and basic physics description of a robot in XML file format. It mainly consists of tags like links , joint and material.  Many of the coolest and most useful capabilities of ROS and its community involve things like collision checking and dynamic path planning. It’s frequently useful to have a code-independent, human-readable way to describe the geometry of robots and their cells. Think of it like a textual CAD description: “part-one is 1 meter left of part-two and has the following triangle-mesh for display purposes.” The Unified Robot Description Format (URDF) is the most popular of these formats today. This module will walk you through creating a simple robot cell that we’ll expand upon and use for practical purposes later.
+    </p>
+    <h2>System Decription</h2>
+    <p>In this project, We intend to realize the following three goals. First of all, we plan to control the robot-arm by human with keyboard manually. Afterwards, we want the robot-arm to automatically seek and fetch the object in the same plane. Besides, we hope the robot-arm can achieve the function that moving the object to a specific location while recognizing and avoiding obstacles.
+    </p>
+    <p>We will use Ros, moveit, and maybe find-object to achieve the goal above. We will use Ros to control the whole robot arm, and use Moveit package to do motion planning, manipulation, and even collision detection. If we have time, we will try to use find-object package to find multiple object.
+    </p>
+    <p>For motion planning, we will probably use OMPL(Open Motion Planning Library) algorithm which is the default of Moveit!. For Collision Checking, we will use FCL(Flexible Collision Library) of Moveit! to find check whether there exists collision in planning pat based on the OctoMap generated by 3D Perception plugin.
+    </p>
+    <p>For computer vision task,  we will use apriltags to find where the tube are relavant to camera.</p>
+    <h2>System Evaluation</h2>
+    <h3>URDF model</h3>
+    <p>We have built a URDF model by creating URDF file with real size, To simplify, we use cylinder and box to represent links of the arm. It looks like below:
+    </p>
+    <img src="https://robotics.shanghaitech.edu.cn/sites/default/files//upload/images/dobot1.jpg">
+    <p>We can see from the figure 1, dobot magician robot arm has a fice links including base link and 4 joint between each of them. To achieve our goal, we need to get the joint message of each joint of the real robot and set it into the joint of URDF model by using joint_state_publisher package in URDF file.</p>
+    <h3>Dobot API</h3>
+    <p>The main point is how to get joint message of the real robot. We can get it by Dobot API. Since it is ugly to put the code here, I have put the code we write in my <a src="">git repository</a></p>
+    <h3>conclusion</h3>
+    <p>Finaly, we have achieved our goal that the mode move along the real robot when we press keyboard to control the real robot. The demo can be found in our webpage of this project.</p>
+    <p></p>
+</div>
+</body>
+</html>
